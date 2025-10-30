@@ -1,161 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Photo Carousel Gallery</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0b1d2a;
-      color: #fff;
-      text-align: center;
-    }
-
-    header {
-      background: #152f47;
-      padding: 20px 0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    h1 {
-      margin: 0;
-      color: #fff;
-    }
-
-    .carousel-container {
-      position: relative;
-      max-width: 800px;
-      margin: 40px auto;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
-    }
-
-    .carousel img {
-      width: 100%;
-      display: none;
-      border-radius: 10px;
-    }
-
-    .carousel img.active {
-      display: block;
-    }
-
-    button.prev, button.next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0,0,0,0.5);
-      border: none;
-      color: white;
-      font-size: 24px;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 50%;
-    }
-
-    button.prev:hover, button.next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-
-    .prev { left: 10px; }
-    .next { right: 10px; }
-
-    .dots {
-      text-align: center;
-      margin-top: 15px;
-    }
-
-    .dot {
-      height: 12px;
-      width: 12px;
-      margin: 5px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .dot.active {
-      background-color: #00bcd4;
-    }
-
-    footer {
-      background: #152f47;
-      padding: 15px 0;
-      margin-top: 40px;
-      color: #ddd;
-      font-size: 0.9em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debjit Paul - Professional Blog/Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        header {
+            background: #2a6496;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.1em;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+        .main-content {
+            padding: 20px 30px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .blog-post {
+            border-left: 5px solid #2a6496;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        .post-title {
+            color: #2a6496;
+            margin-top: 0;
+            font-size: 1.8em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .post-meta {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .post-meta span {
+            font-weight: bold;
+            color: #555;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        .contact-info {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .contact-info a {
+            color: #2a6496;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <h1>My Photo Carousel Gallery</h1>
-  </header>
+    <header>
+        <div class="container">
+            <h1>**Debjit Paul**</h1>
+            <p>Software Engineer | Focused on Data Analysis and System Stability</p>
+        </div>
+    </header>
 
-  <main>
-    <div class="carousel-container">
-      <button class="prev">&#10094;</button>
-      <div class="carousel">
-        <img src="https://picsum.photos/id/1015/800/500" alt="Photo 1" class="active">
-        <img src="https://picsum.photos/id/1016/800/500" alt="Photo 2">
-        <img src="https://picsum.photos/id/1025/800/500" alt="Photo 3">
-        <img src="https://picsum.photos/id/1035/800/500" alt="Photo 4">
-      </div>
-      <button class="next">&#10095;</button>
+    <div class="container">
+        <div class="main-content">
+
+            <div class="contact-info">
+                **Contact:** debjitofficial7@gmail.com | 8582816848 | <a href="https://in.linkedin.com/in/debjitpaul2695" target="_blank">LinkedIn</a>
+            </div>
+
+            <section class="blog-post">
+                <h2 class="post-title">Summary of Expertise</h2>
+                <div class="post-meta"><span>Category:</span> Professional Overview | <span>Keywords:</span> Analytical, Software Engineer, IT, Business Analytics</div>
+                <p>
+                    [cite_start]Focused, analytical, and a quick learner, I am a Software Engineer with over four years of experience in the IT industry[cite: 4]. [cite_start]Skilled in managing both production and non-production environments, I excel at troubleshooting complex issues and ensuring system stability[cite: 5]. [cite_start]Passionate about Business Analytics, I enjoy solving critical problems by leveraging data analysis and various analytical tools to drive informed decision-making[cite: 6].
+                </p>
+            </section>
+
+            <section class="blog-post">
+                <h2 class="post-title">Career Post: System Engineer at Oracle Cerner Healthcare</h2>
+                <div class="post-meta"><span>Timeline:</span> April 2020 - December 2023 | <span>Location:</span> Kolkata</div>
+                <ul>
+                    [cite_start]<li>Managed package installations across multiple domains using **shell scripting** in a **Linux environment**[cite: 10].</li>
+                    [cite_start]<li>Resolved Linux-related issues via PuTTY and collaborated with the backend team using **Unix/Linux command-line expertise**[cite: 12].</li>
+                    [cite_start]<li>Optimized **Logical Volume Management (LVM)**, improving storage flexibility and scalability by managing disk quotas[cite: 13].</li>
+                    [cite_start]<li>Troubleshot and resolved server-related issues, achieving **95% service recovery** within set timelines[cite: 14].</li>
+                    [cite_start]<li>Led the domain version transformation from 2015 to 2018, leveraging Linux expertise[cite: 16].</li>
+                </ul>
+            </section>
+
+            <section class="blog-post">
+                <h2 class="post-title">Career Post: System Administrator at Wipro Technologies</h2>
+                <div class="post-meta"><span>Timeline:</span> February 2019 - January 2020 | <span>Location:</span> Bangalore</div>
+                <ul>
+                    [cite_start]<li>Developed SOPs for **Windows administration** and performed health checks for Wintel, Citrix, Storage, and Backup systems[cite: 22].</li>
+                    [cite_start]<li>Managed **Incident & Change Management** using **BMC Remedy**, ensuring SLA compliance[cite: 23].</li>
+                    [cite_start]<li>Handled system configuration, **OS installations**, security updates, and **patch management**[cite: 25].</li>
+                    [cite_start]<li>Worked with **Active Directory** and **VMware vSphere**, troubleshooting Windows Server 2008, 2012, and 2016[cite: 26].</li>
+                    [cite_start]<li>Streamlined incident resolution processes by **18%** across 5 key business units using Microsoft Visio and BMC Remedy[cite: 27].</li>
+                </ul>
+            </section>
+            
+            <section class="blog-post">
+                <h2 class="post-title">Project Highlight: Urban Logistic Performance and Prediction Dashboard</h2>
+                <div class="post-meta"><span>Tools:</span> Power BI, Python, SQL | <span>GitHub:</span> <a href="https://github.com/Debjit1995/Cloudthat-Internship" target="_blank">View Code</a></div>
+                <ul>
+                    [cite_start]<li>Merged, cleaned, and formatted multiple datasets (orders, customers, delivery data), fixing missing values and standardizing numbers[cite: 31, 32].</li>
+                    [cite_start]<li>Created new KPIs including average delivery time, on-time percentage, and idle time[cite: 33].</li>
+                    [cite_start]<li>Built an **interactive Power BI dashboard** with filters for city, region, courier, and delivery type[cite: 34].</li>
+                    [cite_start]<li>Generated insights revealing bottleneck regions, top couriers, and delay patterns[cite: 35].</li>
+                </ul>
+            </section>
+            
+            <section class="blog-post">
+                <h2 class="post-title">Tech Stack & Analytics Toolkit</h2>
+                <div class="post-meta"><span>Key Focus:</span> Data Analysis, System Administration, Marketing</div>
+                <p>
+                    [cite_start]**Data & Analytics:** SQL, Advanced Excel, Python, Power BI, Data Analysis & Insights Generation, Statistical Analysis, Data Visualization, Risk Analysis[cite: 42, 43, 45].
+                    <br>
+                    [cite_start]**System Admin:** Linux, Unix command-line, Shell Scripting, Active Directory, VMware vSphere, LVM, BMC Remedy, Jira[cite: 10, 12, 13, 15, 23, 26].
+                    <br>
+                    [cite_start]**Business/Marketing:** Marketing Strategies, Market Research, Competitive Analysis, Market Research Tools[cite: 43, 44].
+                </p>
+            </section>
+
+        </div>
     </div>
 
-    <div class="dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2025 Kumar Ayush | Static Web App Demo</p>
-  </footer>
-
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll(".carousel img");
-    const dots = document.querySelectorAll(".dot");
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove("active");
-        dots[i].classList.remove("active");
-      });
-      slides[index].classList.add("active");
-      dots[index].classList.add("active");
-      currentSlide = index;
-    }
-
-    document.querySelector(".next").addEventListener("click", () => {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    });
-
-    document.querySelector(".prev").addEventListener("click", () => {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    });
-
-    dots.forEach((dot, i) => {
-      dot.addEventListener("click", () => showSlide(i));
-    });
-
-    // Auto-slide every 4 seconds
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }, 4000);
-  </script>
+    <footer>
+        <p>Currently pursuing PGDM in Data Science & Business Analytics (2026) | [cite_start]ISBR Business School [cite: 37, 38]</p>
+    </footer>
 </body>
 </html>
